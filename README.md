@@ -18,4 +18,20 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 
 ### Current measurement channels
 - Measurement ranges:
-    - 1X: 
+    - 1X: up to 4700uA
+    - 10X: up to 400uA
+    - 100X: up to 40uA
+    - 1000X: up to 4uA
+- ADC resolution: **12bit (STM32G4 integrated)**
+- Sample rate: **100kHz** (simultaneous sampling with voltage channels)
+- Noise performance: *TBD*. Use *getnoise* CLI command to evaluate.
+- Accuracy: *TBD*
+
+### Temperature control
+- handled by a TEC-1091 module mounted to the main board. See https://www.meerstetter.ch/products/tec-controllers/tec-1091 for specs.
+
+### Illumination (verification TBD)
+- Light output stbility: **+-1% (With LED temperature compensation)**
+- Constant current range: **10mA to 1.4A**
+- Settling time: **20uS to 1%, over current range**
+- See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
