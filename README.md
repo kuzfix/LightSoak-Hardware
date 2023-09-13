@@ -32,7 +32,15 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Sample rate: **100kHz** (simultaneous sampling with voltage channels)
 - Noise performance: *TBD*. Use *getnoise* CLI command to evaluate.
 - Over-range protection: **None**
-- Accuracy: *TBD*
+- Accuracy: **+-(0.85% of measurement + 0.25uA)**
+    - *Note: With shunt range optimization, higher accuracy can be reached. This is accuracy through the whole range including range switching.*
+
+#### Current accuracy report
+![Accuracy report:](docs/calreport-current-13-9-2023.png)
+- Calibration date: 13.9.2023
+- Calibration equipment:
+    - BM789
+- Sample averaging: 2000 (20ms averaging time)
 
 ### Temperature control
 - Handled by a TEC-1091 module mounted to the main board. See https://www.meerstetter.ch/products/tec-controllers/tec-1091 for specs.
