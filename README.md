@@ -34,6 +34,7 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Over-range protection: **None**
 - Accuracy: **+-(0.85% of measurement + 0.25uA)**
     - *Note: With shunt range optimization, higher accuracy can be reached. This is accuracy through the whole range including range switching.*
+    - *Note: Voltage measurement circuitry loads the DUT with about 3.3Mohm. While measuring very small currents, this can cause a discrepancy between the measured and actual DUT current.
 
 #### Current accuracy report
 ![Accuracy report:](docs/calreport-current-13-9-2023.png)
