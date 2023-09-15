@@ -11,6 +11,7 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Sample rate: **100kHz**
 - Differential input resistance: **3.3MOhm +- 10%**
 - Noise performance: *TBD*. Use *getnoise* CLI command to evaluate.
+    - *Note: Noise performance can be improved by adding a capacitor (in the range of 100pF to 100nF) across the input pins. This however introduces dynamic loading on DUT and extends fall times significantly.*
 - Over-range protection: **None**
 - Accuracy: **+-(0.25% of measurement + 0.75mV)**
 
