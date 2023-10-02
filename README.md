@@ -9,9 +9,9 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Measurement range: **0-1.5V**
 - ADC resolution: **12bit (STM32G4 integrated)**
 - Sample rate: **100kHz**
-- Differential input resistance: **3.3MOhm +- 10%**
+- Differential input resistance: **3.3MOhm +- 10% (1GOhm +- 10% if input buffer board is used)**
 - Noise performance: *TBD*. Use *getnoise* CLI command to evaluate.
-    - *Note: Noise performance can be improved by adding a capacitor (in the range of 100pF to 100nF) across the input pins. This however introduces dynamic loading on DUT and extends fall times significantly.*
+    - *Note: Noise performance can be improved significantly by usage of the input buffer board*
 - Over-range protection: **None**
 - Accuracy: **+-(0.25% of measurement + 0.75mV)**
 
@@ -51,7 +51,8 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 ### Illumination (verification TBD)
 - Light output stbility: **+-1% (With LED temperature compensation)**
 - Constant current range: **10mA to 1.4A**
-- Settling time: **20uS to 1%, over current range**
+- Settling time: **100uS to steady state, over current range**
+    - *Note: Settling time is significantly shorter for higher currents. *
 - See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
 
 ### Power supply requirements
