@@ -55,7 +55,7 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Settling time: **100uS to steady state, over current range**
     - *Note: Settling time is significantly shorter for higher currents. *
 - See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
-- Expected temperature rise of the heatsink is 10K
+- Expected temperature rise of the heatsink is 10K at full power
 
 ### Power supply requirements
 - **42V 2.5A DC** on input terminals to support all functionality.
