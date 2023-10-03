@@ -48,13 +48,14 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 - Handled by a TEC-1091 module mounted to the main board. See https://www.meerstetter.ch/products/tec-controllers/tec-1091 for specs.
 - For continous max-power operation of temperature control, additional cooling is recomended for the power supply and TEC module section.
 
-### Illumination (verification TBD)
+### Illumination
 - Light output stbility: **+-1% (With LED temperature compensation)**
 - Constant current range: **50mA to 1.4A**
     - *Note: Lower currents are possible with reduced transient performance*
 - Settling time: **100uS to steady state, over current range**
     - *Note: Settling time is significantly shorter for higher currents. *
 - See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
+- Expected temperature rise of the heatsink is 10K
 
 ### Power supply requirements
 - **42V 2.5A DC** on input terminals to support all functionality.
