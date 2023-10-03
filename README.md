@@ -50,7 +50,8 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
 
 ### Illumination (verification TBD)
 - Light output stbility: **+-1% (With LED temperature compensation)**
-- Constant current range: **10mA to 1.4A**
+- Constant current range: **50mA to 1.4A**
+    - *Note: Lower currents are possible with reduced transient performance*
 - Settling time: **100uS to steady state, over current range**
     - *Note: Settling time is significantly shorter for higher currents. *
 - See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
