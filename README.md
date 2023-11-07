@@ -54,7 +54,7 @@ LightSoak hardware can be used standalone via a Command Line Interface over USB 
     - *Note: Lower currents are possible with reduced transient performance*
 - Settling time: **100uS to steady state, over current range**
     - *Note: Settling time is significantly shorter for higher currents. *
-- 1 sun equivalent illumination (1000W/m^2) reached at approximately 10 cm from LED at 1A (in-situ callibration needed)
+- 1 sun equivalent illumination (1000W/m^2): approximately 10 cm from LED at 1A (should be callibrated in-situ if accuracy is needed)
 - See https://downloads.cree-led.com/files/ds/x/XLamp-CXA2530.pdf for LED specs
 - Expected temperature rise of the heatsink is 10K at full power
 
